@@ -1,0 +1,31 @@
+tables:
+   - actor
+   - director
+   - genre
+   - movie
+   - movie_actor
+   - movie_director
+   - movie_genre
+   - movie_studio
+   - review
+   - studio
+
+transformation:
+   - resources/sql/assignment/silver/actor.sql
+   - resources/sql/assignment/silver/director.sql
+   - resources/sql/assignment/silver/genre.sql
+   - resources/sql/assignment/silver/studio.sql
+   - resources/sql/assignment/silver/movie.sql
+   - resources/sql/assignment/silver/movie_actor.sql
+   - resources/sql/assignment/silver/movie_director.sql
+   - resources/sql/assignment/silver/movie_genre.sql
+   - resources/sql/assignment/silver/movie_studio.sql
+   - resources/sql/assignment/silver/review.sql
+
+datamart:
+   - resources/sql/assignment/gold/dim_actor.sql
+   - resources/sql/assignment/gold/dim_director.sql
+   - resources/sql/assignment/gold/dim_genre.sql
+   - resources/sql/assignment/gold/dim_movie.sql
+   - resources/sql/assignment/gold/dim_studio.sql
+   - resources/sql/assignment/gold/fact_movie_genre.sql
